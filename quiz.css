@@ -90,7 +90,8 @@ header {
 }
 
 .question {
-  width: 40%;
+  max-width: 80%;
+  min-width: 40%;
   height: auto;
   margin: auto;
   text-align: center;
