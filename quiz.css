@@ -39,7 +39,7 @@ header {
   gap: 40px;
   padding: 3px 10px;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   /* background-color: aliceblue; */
 }
 
