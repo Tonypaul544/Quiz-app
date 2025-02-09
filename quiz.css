@@ -166,15 +166,15 @@ header {
 
 
 .down-button-container {
-  width: 70%;
+  width: 90%;
   display: flex;
   margin: auto;
   max-width: 500px;
-/*   background-color: blueviolet;
-} */
+  /* background-color: blueviolet; */
+}
 
 #btn {
-  width: 20%;
+  width: 30%;
   min-width: 200px;
   height: 30px;
   display: flex;
@@ -231,9 +231,9 @@ header {
 
 
 button.submit {
-  width: 25%;
-  min-width: 50px;
-  max-width: 120px;
+  width: 35%;
+  min-width: 70px;
+  max-width: 180px;
   height: 40px;
   display: grid;
   border-radius: 9px;
