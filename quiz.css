@@ -55,8 +55,12 @@ header {
 }
 
 .progress-line {
-  width: 100%;
-  height: 4px;
+  width: 50%;
+  height: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  border-radius: 2px;
   background-color: rgb(204, 187, 251);
 }
 
@@ -64,6 +68,7 @@ header {
   width: 60%;
   height: 100%;
   margin-top: 5px;
+  border-radius: 5px;
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
   background-color: rgb(136, 0, 248);
@@ -72,16 +77,38 @@ header {
 .page-details {
   width: 95%;
   margin: 20px auto;
-  margin-top: 60px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
 
   /* BODY-SECTION */
 
+.app {
+  /* background-color: aqua; */
+  border-radius: 10px;
+}
+
+.app h3 {
+  font-weight: 25px;
+  font-size: 22px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1.3px solid #333;
+  padding-bottom: 20px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h3 {
+
+}
+
 .list-container {
   overflow-x: hidden;
-  /* width: 80%; */
+  width: 80%;
   margin: auto;
   height: auto;
   padding: 10px 30px;
@@ -113,24 +140,31 @@ header {
   /* background-color: aliceblue; */
 }
 
-form {
+/* #answer-buttons {
+  width: 80%;
+  height: auto;
+  background-color: aqua;
+} */
+
+.form-container {
   width: 100%;
+  max-width: 500px;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgb(83, 177, 177); */
+  /* background-color: rgb(17, 75, 75); */
 }
 
-.options-list {
-  width: 79%;
+#btn {
+  width: 79.2%;
   min-width: 250px;
   height: 30px;
   display: flex;
-  padding-right: 10px;
+  padding-left: 10px;
   justify-content: space-between;
   border-radius: 9px;
   align-items: center;
@@ -140,7 +174,7 @@ form {
   background-color: rgb(174, 232, 213);
 }
 
-.options-list:hover {
+#btn:hover {
   transition: all .2s;
   width: 79.5%;
   height: 31px;
@@ -156,7 +190,7 @@ form {
   box-shadow: 0 0 9px .1px rgba(194, 212, 249, 0.778);
 }
 
-.options-list:active {
+#btn:active {
   transition: all .2s;
   width: 79.5%;
   height: 31px;
@@ -178,38 +212,9 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* background-color: rosybrown; */
 }
 
-.form-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  flex-direction: column;
-}
-
-label {
-  width: 92%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 0 10px;
-  break-after: inherit;
-  align-items: center;
-  /* background-color: rgb(217, 215, 250); */
-}
-
-.button-container {
-  width: 70%;
-  height: auto;
-  gap: 10px;
-  height: 50px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  /* background-color: rgb(94, 244, 124); */
-
-}
 
 button.submit {
   width: 30%;
@@ -227,12 +232,10 @@ button.submit {
   font-weight: 700;
 }
 
+.correct {
+  background-color: rgb(43, 67, 203);
+}
 
-
-
-
-   /* CHANGE QUESION */
-
-.container2, .container3, .container4, .container5 {
-  display: none;
+.incorrect {
+  background-color: chocolate;
 }
