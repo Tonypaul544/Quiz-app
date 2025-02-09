@@ -21,11 +21,11 @@
   </header>
 
   <div class="page-details">
-    <p class="pagecount pagecount1">Question: 2 / 5</p>
-    <div class="head-right">
+    <p class="pagecount pagecount1">Question: <span id="currentnumber">0</span> / <span id="totalQuestions">10</span></p>
+    <!-- <div class="head-right">
       <i class="fa-sharp fa-solid fa-clock fa-lg"></i>
-      <p class="time">3:00</p>
-    </div>
+      <p class="time"> 3:00</p>
+    </div> -->
   </div>
   <div class="progress-line">
     <div class="progress"></div>
@@ -33,7 +33,7 @@
   <div class="list-container container1 app">
     <h3 class="question" id="question">Question goes here.</h3>      
        <div class="form-holder option quiz" id="div">
-          <div class="form-container" id="choices">
+          <div class="form-container option" id="choices">
 
             <button class="one-hour option btn" id="btn">1 hour</button>
 
@@ -43,7 +43,11 @@
     
             <button class="ten-hour btn" id="btn">10 hours</button>
           </div>
-          <button type="submit" class="submit" id="next-btn" id="btn">Next</button>
+          <div class="down-button-container">
+            <button type="submit" class="submit" id="prevButton" id="btn">Back</button>
+            <button type="submit" class="submit" id="submitButton" id="btn">Submit</button>
+            <button type="submit" class="submit" id="nextButton" id="btn">Next</button>
+          </div>
        </div>
     </div>
   <script src="quiz.js"></script>

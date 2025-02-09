@@ -82,6 +82,11 @@ header {
   justify-content: space-between;
 }
 
+.page-details p{
+  display: flex;
+  /* background-color: #000; */
+}
+
   /* BODY-SECTION */
 
 .app {
@@ -159,9 +164,18 @@ header {
   /* background-color: rgb(17, 75, 75); */
 }
 
+
+.down-button-container {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  max-width: 500px;
+  background-color: blueviolet;
+}
+
 #btn {
-  width: 79.2%;
-  min-width: 250px;
+  width: 20%;
+  min-width: 200px;
   height: 30px;
   display: flex;
   padding-left: 10px;
@@ -176,7 +190,7 @@ header {
 
 #btn:hover {
   transition: all .2s;
-  width: 79.5%;
+  width: 50.25%;
   height: 31px;
   display: flex;
   padding-right: 12px;
@@ -192,7 +206,7 @@ header {
 
 #btn:active {
   transition: all .2s;
-  width: 79.5%;
+  width: 50.51%;
   height: 31px;
   display: flex;
   padding-right: 12px;
@@ -217,8 +231,9 @@ header {
 
 
 button.submit {
-  width: 30%;
-  min-width: 100px;
+  width: 25%;
+  min-width: 50px;
+  max-width: 120px;
   height: 40px;
   display: grid;
   border-radius: 9px;

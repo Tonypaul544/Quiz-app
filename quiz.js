@@ -118,7 +118,27 @@ const quizData = [
           d: "Ghana"
       },
       correctAnswer: "c"
-  }
+  },
+  {
+    question: "Which country is known as the Giant of Africa?",
+    choices: {
+        a: "Kenya",
+        b: "South Africa",
+        c: "Nigeria",
+        d: "Ghana"
+    },
+    correctAnswer: "c"
+},
+{
+  question: "Which country is known as the Giant of Africa?",
+  choices: {
+      a: "Kenya",
+      b: "South Africa",
+      c: "Nigeria",
+      d: "Ghana"
+  },
+  correctAnswer: "c"
+}
 ];
 
 let shuffledQuestions = [...quizData].sort(() => Math.random() - 0.5);
@@ -131,6 +151,8 @@ function renderQuestion() {
       document.getElementById("question").innerText = currentQuestion.question;
       document.getElementById("currentnumber").innerText = currentQuestionIndex + 1;
       document.getElementById("totalQuestions").innerText = shuffledQuestions.length;
+
+
 
       const choicesDiv = document.getElementById("choices");
       choicesDiv.innerHTML = "";
@@ -187,15 +209,14 @@ function displayScore() {
   document.getElementById("choices").style.display = "none";
 
   const percentage = (totalScore / shuffledQuestions.length) * 100;
-  let message = percentage >= 80 ? "Excellent! 🎉" : percentage >= 50 ? "Good job! 👍" : "Try again! 😞";
+  let message = percentage >= 80 ? "Excellent! 🎉" : percentage >= 50 ? "Good job! " : "Try again! ";
   
   const resultDiv = document.getElementById("result-container");
   resultDiv.style.display = "flex";
   resultDiv.innerHTML = `
       <h2>Quiz Completed!</h2>
-      <h3>${playerName}</h3>
-      <p>Your final score: <strong>${totalScore}/${shuffledQuestions.length}</strong></p>
-      <p><strong>${message}</strong></p>
+      <p>Your final score: <h2>${totalScore}/${shuffledQuestions.length}</h2></p>
+      <p><h3>${message}</h3></p>
   `;
 }
 
