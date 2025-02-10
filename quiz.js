@@ -90,44 +90,54 @@
 
 const quizData = [
   {
-      question: "Who is the president of Nigeria?",
+      question: " What is the purpose of the <title> tag in HTML?",
       choices: {
-          a: "Mr. General Peter Mbah",
-          b: "Mr. General Bola Ahmed Tinubu",
-          c: "Mr. General Goodluck Jonathan",
-          d: "Mr. General Opie Chisom"
-      },
-      correctAnswer: "a"
-  },
-  {
-      question: "What is the capital of Nigeria?",
-      choices: {
-          a: "Lagos",
-          b: "Abuja",
-          c: "Kano",
-          d: "Port Harcourt"
-      },
-      correctAnswer: "b"
-  },
-  {
-      question: "Which country is known as the Giant of Africa?",
-      choices: {
-          a: "Kenya",
-          b: "South Africa",
-          c: "Nigeria",
-          d: "Ghana"
+          a: "To define the font style of a webpage",
+          b: "To specify the background color of a webpage",
+          c: "To define the title of a webpage",
+          d: "To add an image to a webpage"
       },
       correctAnswer: "c"
   },
   {
-    question: "Which country is known as the Giant of Africa?",
+      question: "Which HTML tag is used to create an unordered list?",
+      choices: {
+          a: "<ol>",
+          b: "<ul>",
+          c: "<dl>",
+          d: "<p>"
+      },
+      correctAnswer: "b"
+  },
+  {
+      question: "What is the purpose of the alt attribute in the <img> tag?",
+      choices: {
+          a: "To specify the width of an image",
+          b: "To specify the height of an image",
+          c: "To provide alternative text for an image",
+          d: "To specify the border color of an image"
+      },
+      correctAnswer: "c"
+  },
+  {
+    question: "Which HTML tag is used to create a table row?",
     choices: {
-        a: "Kenya",
-        b: "South Africa",
-        c: "Nigeria",
-        d: "Ghana"
+        a: "<table>",
+        b: "<tr>",
+        c: "<td>",
+        d: "<th>"
     },
     correctAnswer: "c"
+},
+{
+  question: "What is the purpose of the <meta> tag in HTML?",
+  choices: {
+      a: "To define the structure of a webpage",
+      b: "To specify the character encoding of a webpage",
+      c: "To add a script to a webpage",
+      d: "To create a hyperlink"
+  },
+  correctAnswer: "b"
 },
 ];
 
