@@ -173,10 +173,10 @@ header {
   /* background-color: blueviolet; */
 }
 
-#btn {
-  width: 30%;
+.option {
+  width: 90%;
   min-width: 200px;
-  height: 30px;
+  height: 40px;
   display: flex;
   padding-left: 10px;
   justify-content: space-between;
@@ -188,10 +188,10 @@ header {
   background-color: rgb(174, 232, 213);
 }
 
-#btn:hover {
+.option:hover {
   transition: all .2s;
-  width: 50.25%;
-  height: 31px;
+  width: 90.25%;
+  height: 41px;
   display: flex;
   padding-right: 12px;
   justify-content: space-between;
@@ -204,10 +204,10 @@ header {
   box-shadow: 0 0 9px .1px rgba(194, 212, 249, 0.778);
 }
 
-#btn:active {
+.option:active {
   transition: all .2s;
-  width: 50.51%;
-  height: 31px;
+  width: 89%;
+  height: 39.5px;
   display: flex;
   padding-right: 12px;
   justify-content: space-between;
@@ -253,4 +253,10 @@ button.submit {
 
 .incorrect {
   background-color: chocolate;
+}
+
+.option {
+  /* background-color: aquamarine; */
+  margin-bottom: 10px;
+  border-radius: 10px;
 }

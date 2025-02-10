@@ -129,16 +129,6 @@ const quizData = [
     },
     correctAnswer: "c"
 },
-{
-  question: "Which country is known as the Giant of Africa?",
-  choices: {
-      a: "Kenya",
-      b: "South Africa",
-      c: "Nigeria",
-      d: "Ghana"
-  },
-  correctAnswer: "c"
-}
 ];
 
 let shuffledQuestions = [...quizData].sort(() => Math.random() - 0.5);
@@ -158,17 +148,17 @@ function renderQuestion() {
       choicesDiv.innerHTML = "";
 
       Object.entries(currentQuestion.choices).forEach(([key, value]) => {
-          const choiceButton = document.createElement("div");
-          choiceButton.classList.add("option");
-          choiceButton.innerText = value;
-          choiceButton.setAttribute("data-choice", key);
+        const choiceButton = document.createElement("div");
+        choiceButton.classList.add("option");
+        choiceButton.innerText = value;
+        choiceButton.setAttribute("data-choice", key);
 
-          if (userResponses[currentQuestionIndex] === key) {
-              choiceButton.style.backgroundColor = "green";
-          }
-          
-          choiceButton.onclick = selectAnswer;
-          choicesDiv.appendChild(choiceButton);
+        if (userResponses = currentQuestionIndex) { //[currentQuestionIndex] === key) {
+            choiceButton.style.backgroundColor = "green";
+        }
+        
+        choiceButton.onclick = selectAnswer;
+        choicesDiv.appendChild(choiceButton);
       });
   }
 }
