@@ -187,7 +187,7 @@ header {
   box-sizing: border-box;
   margin-bottom: 20px;
   border: 2px solid rgb(121, 111, 155);
-  background-color: rgb(174, 232, 213);
+  background-color: rgb(199, 232, 241);
 }
 
 .option:hover {
@@ -202,7 +202,8 @@ header {
   margin: auto;
   padding: 5px 10px;
   margin-bottom: 10px;
-  background-color: rgb(190, 234, 245);
+  color: #fff;
+  background-color: rgb(102, 161, 176);
   border: 2px solid rgb(113, 84, 215);
   box-shadow: 0 0 9px .1px rgba(194, 212, 249, 0.778);
 }
@@ -220,6 +221,7 @@ header {
   padding: 5px 10px;
   margin-bottom: 10px;
   background-color: rgb(153, 213, 228);
+  color: #fff;
   border: 2px solid rgb(96, 67, 205);
   box-shadow: 0 0 9px .1px rgba(167, 188, 232, 0.848);
 }
