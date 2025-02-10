@@ -166,7 +166,7 @@ header {
 
 
 .down-button-container {
-  width: 100%;
+  width: 95%;
   display: flex;
   margin: auto;
   max-width: 500px;
@@ -174,7 +174,7 @@ header {
 }
 
 .option {
-  width: 100%;
+  width: 96%;
   min-width: 200px;
   height: 45px;
   display: flex;
@@ -184,6 +184,7 @@ header {
   align-items: center;
   margin: auto;
   padding: 5px 10px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   border: 2px solid rgb(121, 111, 155);
   background-color: rgb(174, 232, 213);
