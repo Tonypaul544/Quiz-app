@@ -198,7 +198,7 @@ header {
   border-radius: 6px;
   align-items: center;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: rgb(190, 234, 245);
   border: 2px solid rgb(113, 84, 215);
   box-shadow: 0 0 9px .1px rgba(194, 212, 249, 0.778);
@@ -214,7 +214,7 @@ header {
   border-radius: 6px;
   align-items: center;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: rgb(153, 213, 228);
   border: 2px solid rgb(96, 67, 205);
   box-shadow: 0 0 9px .1px rgba(167, 188, 232, 0.848);
@@ -259,4 +259,30 @@ button.submit {
   /* background-color: aquamarine; */
   margin-bottom: 10px;
   border-radius: 10px;
+}
+
+#result-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(240, 251, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.score {
+  width: 80%;
+  height: auto;
+  /* padding: 10px; */
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: 560;
+}
+
+.change-color {
+  color: rgb(0, 42, 255);
 }

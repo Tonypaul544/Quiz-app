@@ -21,7 +21,7 @@
   </header>
 
   <div class="page-details">
-    <p class="pagecount pagecount1">Question: <span id="currentnumber">0</span> / <span id="totalQuestions">10</span></p>
+    <p class="pagecount pagecount1" id="changeToAnswer">Question: <span id="currentnumber">0</span> / <span id="totalQuestions">10</span></p>
     <!-- <div class="head-right">
       <i class="fa-sharp fa-solid fa-clock fa-lg"></i>
       <p class="time"> 3:00</p>
@@ -43,13 +43,20 @@
     
             <button class="ten-hour btn" id="btn">10 hours</button>
           </div>
-          <div class="down-button-container">
+          <div class="down-button-container" id="btnButton">
             <button type="submit" class="submit" id="prevButton" id="btn">Back</button>
             <button type="submit" class="submit" id="submitButton" id="btn">Submit</button>
             <button type="submit" class="submit" id="nextButton" id="btn">Next</button>
           </div>
        </div>
+       <div id="result-container">
+        <h2 id="completed">Quiz Completed!</h2>
+        <p class="score">You scored: <strong id="score" class="change-color">5</strong> / <strong id="total">10</strong></p>
+        <p><h3>Try again</h3></p>
+      </div>
     </div>
+
+
   <script src="quiz.js"></script>
 </body>
 </html>

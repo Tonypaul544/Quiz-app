@@ -164,7 +164,7 @@ function renderQuestion() {
         choiceButton.setAttribute("data-choice", key);
 
         if (userResponses = currentQuestionIndex) { //[currentQuestionIndex] === key) {
-            choiceButton.style.backgroundColor = "green";
+            choiceButton.style.backgroundColor = "";
         }
         
         choiceButton.onclick = selectAnswer;
@@ -179,6 +179,7 @@ function selectAnswer(event) {
   
   document.querySelectorAll('.option').forEach(choice => choice.style.backgroundColor = "");
   event.target.style.backgroundColor = "green";
+  choiceButton.style.color = "#fff";
 }
 
 function prevQuestion() {
@@ -207,6 +208,13 @@ function finishQuiz() {
 function displayScore() {
   document.getElementById("question-container").style.display = "none";
   document.getElementById("choices").style.display = "none";
+  document.getElementById("question").style.display = "none";
+  document.getElementById("btnButton").style.display = "none";
+  // document.getElementById("changeToAnswer").innerHTML = "Your score";
+  // document.getElementById("result-container").style.display = "block";
+  // document.getElementById("score").innerHTML = shuffledQuestions.length;
+
+  
 
   const percentage = (totalScore / shuffledQuestions.length) * 100;
   let message = percentage >= 80 ? "Excellent! 🎉" : percentage >= 50 ? "Good job! " : "Try again! ";
