@@ -30,7 +30,7 @@
   <div class="progress-line">
     <div class="progress"></div>
    </div>
-  <div class="list-container container1 app">
+  <div class="list-container container1 app" id="quiz-container">
     <h3 class="question" id="question">Question goes here.</h3>      
        <div class="form-holder quiz" id="div">
           <div class="form-container" id="choices">
@@ -43,19 +43,22 @@
     
             <button class="ten-hour btn" id="btn">10 hours</button>
           </div>
+
+          <div id="result-container">
+            <h2 id="completed">Quiz Completed!</h2>
+            <p class="score">You scored: <strong id="yourScore" class="change-color">5</strong> / <strong id="total">10</strong></p>
+            <p><h3>Try again</h3></p>
+         </div>
+
           <div class="down-button-container" id="btnButton">
             <button type="submit" class="submit" id="prevButton" id="btn">Back</button>
             <button type="submit" class="submit" id="submitButton" id="btn">Submit</button>
             <button type="submit" class="submit" id="nextButton" id="btn">Next</button>
+            <button type="submit" class="submit" id="replayButton">Play again</button>
           </div>
        </div>
-       <div id="result-container">
-        <h2 id="completed">Quiz Completed!</h2>
-        <p class="score">You scored: <strong id="score" class="change-color">5</strong> / <strong id="total">10</strong></p>
-        <p><h3>Try again</h3></p>
-      </div>
+      
     </div>
-
 
   <script src="quiz.js"></script>
 </body>
