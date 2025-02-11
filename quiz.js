@@ -131,6 +131,7 @@ function displayScore(){
 
   document.getElementById("result-container").style.display = "block";
 
+  document.getElementById("total").innerHTML = shuffledQuestions.length;
   const yourScore = document.getElementById("yourScore");
   yourScore.innerHTML = totalScore;  
   document.getElementById("replayButton").addEventListener("click", restart)
@@ -140,27 +141,6 @@ function restart() {
   location.reload();
 }
 
-
-
-// function displayScore() {
-//   document.getElementById("question-container").style.display = "none";
-//   document.getElementById("choices").style.display = "none";
-//   document.getElementById("question").style.display = "none";
-//   document.getElementById("btnButton").style.display = "none";
-//   document.getElementById("changeToAnswer").innerHTML = "Your score";
-
-  
-//   const percentage = (totalScore / shuffledQuestions.length) * 100;
-//   let message = percentage >= 80 ? "Excellent! 🎉" : percentage >= 50 ? "Good job! " : "Try again! ";
-  
-//   const resultDiv = document.getElementById("result-container");
-//   resultDiv.style.display = "flex";
-//   resultDiv.innerHTML = `
-//       <h2>Quiz Completed!</h2>
-//       <p>Your final score: <h2>${totalScore}/${shuffledQuestions.length}</h2></p>
-//       <p><h3>${message}</h3></p>
-//   `;
-// }
 
 window.onload = () => {
   renderQuestion();
